@@ -1,0 +1,22 @@
+{
+  "name": "mongodb102",
+  "version": "1.0.0",
+  "description": "Class exercise with mongodb native node server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lathammatt/mongodb102.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lathammatt/mongodb102/issues"
+  },
+  "homepage": "https://github.com/lathammatt/mongodb102#readme",
+  "dependencies": {
+    "mongodb": "^2.2.9"
+  }
+}
