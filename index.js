@@ -8,7 +8,7 @@ const MongoDB_url = 'mongodb://localhost:27107/test'
 //   db.close() //will close mongodb connection when done
 // })
 
-
+//way one
 MongoClient
   .connect(MongoDB_url)
   .then(db => {  //returns promise since no callback passed
@@ -19,12 +19,12 @@ MongoClient
         restaurants.forEach(restaurant => {
           console.log(restaurant)
         })
-        db.close()
       })
-      .catch(console.error)
+      .then(() => db.close())
   })
   .catch(console.error)
 
+//way two
 MongoClient
   .connect(MongoDB_url)
   .then(db => {  //returns promise since no callback passed
